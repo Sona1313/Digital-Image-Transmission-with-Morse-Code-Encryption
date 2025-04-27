@@ -62,7 +62,7 @@ def create_histogram(image):
     print("Histogram created successfully")
     return hist_img
 
-def preprocess_image(image, target_size=(64, 48)):
+def preprocess_image(image, target_size=(720, 720)):
     """Preprocess the image to reduce size and prepare for encoding"""
     # Resize to target size
     resized = cv2.resize(image, target_size)
